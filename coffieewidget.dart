@@ -85,10 +85,11 @@ class CoffieeExample extends StatelessWidget{
                            decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: const Color.fromARGB(255, 129, 124, 124),
                           ),
                           child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Icon(Icons.currency_rupee,color: Colors.white),
                               Text(DataBase.coffeeList[index]["price"],style: TextStyle(color: Colors.white),),
+                              Spacer(),
                               FloatingActionButton(onPressed: (){},child: Text("+"),),
                             ],
                           ),
